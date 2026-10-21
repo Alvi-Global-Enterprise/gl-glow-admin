@@ -19,6 +19,10 @@ const quicksand = Quicksand({
 export const metadata: Metadata = {
   title: "GL Glow — Multi-Store Admin Portal",
   description: "Enterprise multi-tenant administrative portal for GL Glow & store branches",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({

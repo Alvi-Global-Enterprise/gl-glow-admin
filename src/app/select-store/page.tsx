@@ -2,6 +2,7 @@
 
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 import { useAdminStore } from '@/store/useAdminStore';
 import { StoreMembership } from '@/types/admin';
 import { Card, CardContent } from '@/components/ui/card';
@@ -47,8 +48,15 @@ export default function SelectStorePage() {
       {/* Top Bar */}
       <div className="max-w-6xl w-full mx-auto flex items-center justify-between pb-8 border-b border-neutral-200/60">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-[#d5a667] to-[#ffc475] flex items-center justify-center text-white shadow-md shadow-[#c69b61]/20">
-            <Sparkles className="w-5 h-5 fill-white" />
+          <div className="w-11 h-11 rounded-2xl bg-white border border-[#d5a667]/25 flex items-center justify-center p-1.5 shadow-sm shadow-[#c69b61]/15">
+            <Image
+              src="/logo.png"
+              alt="GL Glow Logo"
+              width={40}
+              height={40}
+              className="w-full h-full object-contain"
+              priority
+            />
           </div>
           <div>
             <h1 className="font-extrabold text-lg tracking-tight text-neutral-900 font-[family-name:var(--font-display)]">
