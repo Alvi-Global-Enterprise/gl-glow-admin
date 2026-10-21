@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --cream: #f7efe5;
+  --gold: #ffc475;
+  --gold-deep: #c69b61;
+  --gold-soft: #d5a667;
+  --font-display: var(--font-questrial);
+  --font-nav: var(--font-quicksand);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-cream: var(--cream);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-gold-soft: var(--gold-soft);
+  --font-sans: var(--font-questrial);
+  --font-display: var(--font-display);
+  --font-nav: var(--font-nav);
+  --font-quicksand: var(--font-quicksand);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d5a66740;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c69b6180;
+}
+
+/* Glassmorphism and premium styling */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(198, 155, 97, 0.2);
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #f7efe5 0%, #ffffff 50%, #fcf7f1 100%);
+}
+
+.gold-badge {
+  background: linear-gradient(135deg, #ffc475 0%, #c69b61 100%);
+  color: #ffffff;
+}
